@@ -1,0 +1,146 @@
+/* Light Theme for College Complaint Management System */
+
+/* Prevent Horizontal Scroll */
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f7f7f7;
+  font-family: "Poppins", sans-serif;
+  color: #333;
+}
+
+/* Fullscreen Flex Container */
+.fullscreen-flex {
+  display: flex;
+  flex-direction: column; /* Change to row if needed */
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+}
+
+.card {
+  background: #ffffff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+  border-radius: 12px;
+  margin-right: 0;
+  margin-bottom: 0;
+}
+
+.card:hover {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px) scale(1.02);
+}
+
+.card-header {
+  background: linear-gradient(135deg, #4e73df, #1cc88a);
+  color: white;
+  border-radius: 12px 12px 0 0 !important;
+  font-weight: 600;
+  text-align: center;
+  padding: 15px;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #4e73df, #1cc88a);
+  border: none;
+  padding: 12px 18px;
+  border-radius: 10px;
+  transition: 0.3s;
+  color: white;
+  font-weight: bold;
+}
+
+.btn-primary:hover {
+  background: linear-gradient(135deg, #1cc88a, #4e73df);
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(28, 200, 138, 0.5);
+}
+
+.complaint-status {
+  font-weight: 600;
+  padding: 6px 12px;
+  border-radius: 25px;
+  display: inline-block;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.status-pending {
+  background-color: #f39c12;
+  color: #333;
+}
+
+.status-in-progress {
+  background-color: #17a2b8;
+  color: white;
+}
+
+.status-resolved {
+  background-color: #28a745;
+  color: white;
+}
+
+.form-group label {
+  font-weight: 600;
+  color: #333;
+}
+
+.required:after {
+  content: " *";
+  color: red;
+}
+
+.complaint-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-top: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.complaint-image:hover {
+  transform: scale(1.05);
+}
+
+.login-form,
+.register-form {
+  max-width: 450px;
+  margin: 0 auto;
+  padding: 25px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s;
+}
+
+.login-form:hover,
+.register-form:hover {
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
+}
+
+.form-group input,
+.form-group textarea {
+  border-radius: 8px;
+  padding: 12px;
+  width: 100%;
+  border: 1px solid #ccc;
+  background: #f8f9fa;
+  transition: 0.3s ease-in-out;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #4e73df;
+  outline: none;
+  background: #fff;
+}
